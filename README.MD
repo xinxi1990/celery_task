@@ -1,5 +1,5 @@
 # 背景
-celery
+使用celery执行定时脚本
 
 
 
