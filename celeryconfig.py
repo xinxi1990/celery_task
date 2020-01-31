@@ -54,8 +54,8 @@ beat_schedule = {
 
     'task_requests': {
         'task': 'celery_task.app_scripts.task_requests.test_get_request_2019_nCoV',
-        # 设置定时的时间，10秒一次
-        'schedule': timedelta(seconds=5),
+        # 设置定时的时间，1小时执行一次
+        'schedule': crontab(minute=0, hour="*/1"),
         'args': ()
     }
     # },
